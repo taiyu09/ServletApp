@@ -11,7 +11,7 @@
 			<br><br>
 			<div class="ui blue segment">
 				<h2 class="ui center aligned header">利用者ログイン</h2>
-				<form class="ui form" action="#" method="get">
+				<form class="ui form" action="#" method="get" style="width:90%;margin:0 auto">
 					<div class="field">
  						<label>ログインID</label>
  						<div class="ui input">
@@ -36,11 +36,15 @@
 			</div>
 			<br>
 			<div class="ui message">
-  				<a href="{{ url_for('teacher_login') }}">新規登録はこちら >></a>
+				<div style="width:90%;margin:0 auto">
+					<a href="{{ url_for('teacher_login') }}">新規登録はこちら >></a>
+				</div>
 			</div>
 			<br>
 			<div class="ui message">
-  				<a href="{{ url_for('teacher_login') }}">管理者ログインはこちら >></a>
+  				<div style="width:90%;margin:0 auto">
+					<a href="{{ url_for('teacher_login') }}">管理者ログインはこちら >></a>
+				</div>
 			</div>
 			<br><br>
 		</div>

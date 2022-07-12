@@ -17,7 +17,7 @@ pageEncoding="UTF-8"%>
 <body>
 	<div class="ui fixed inverted massive menu">
 		<div class="ui container">
-			<a href="#" class="header item">
+			<a href="/servlet01/topmenu" class="header item">
 				<img class="logo" src="img/logo.png">
 				&emsp;取引先企業検索システム
 			</a>

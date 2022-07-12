@@ -26,6 +26,12 @@
 					</div>
 					<br>
 					<input class="fluid ui primary button" type="submit" value="ログイン">
+					<br>
+					<div class="ui center aligned container">
+						<a href="https://morijyobi.ac.jp/">
+							パスワードを忘れた場合はこちら
+						</a>
+					</div>
 				</form>
 			</div>
 			<br>

@@ -10,7 +10,7 @@
 		<div class="eight wide column">
 			<br><br>
 			<div class="ui segment">
-				<form action="#" name="form1" method="get">
+				<form action="/servlet01/u_login" name="form1" method="get">
 					<br>
 					<a class="fluid ui primary huge button" href="javascript:form1.submit()" style="size">利用者</a>
 				</form>

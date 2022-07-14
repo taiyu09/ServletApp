@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 
-<jsp:include page="template/template_top.jsp"/>
+<jsp:include page="../template/template_top.jsp"/>
 
 <div class="ui container" style="min-height: 75vh;">
 <br><br><br><br>
@@ -11,4 +11,4 @@
 	</div>
 </div>
 
-<jsp:include page="template/template_bottom.jsp"/>
+<jsp:include page="../template/template_bottom.jsp"/>

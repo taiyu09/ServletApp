@@ -1,4 +1,4 @@
-package model;
+package servlet_user;
 
 import java.io.IOException;
 

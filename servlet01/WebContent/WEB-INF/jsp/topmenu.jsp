@@ -11,7 +11,7 @@
 			<div style="width:90%;margin:0 auto">
 				<form action="#" name="form1" method="get">
 					<br>
-					<a class="fluid ui primary huge button" href="javascript:form1.submit()" style="size">利用者</a>
+					<a class="fluid ui primary huge button" href="javascript:form1.submit()">利用者</a>
 				</form>
 				<br><br>
 				<form action="#" name="form2" method="get">

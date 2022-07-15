@@ -16,7 +16,7 @@ public class table_sample extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		RequestDispatcher dispatcher =
-				request.getRequestDispatcher("WEB-INF/jsp/sample.jsp");
+				request.getRequestDispatcher("WEB-INF/jsp/sample/sample.jsp");
 		dispatcher.forward(request, response);
 	}
 }

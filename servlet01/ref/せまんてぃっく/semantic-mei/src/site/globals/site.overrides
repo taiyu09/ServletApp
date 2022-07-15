@@ -1,0 +1,10 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@font-face  {
+    font-family: 'fontname';
+    src:url('themes/basic/assets/fonts/meiryo.eot'); 
+    src:url('themes/basic/assets/fonts/meiryo.eot?#') format('eot'),    
+        url('themes/basic/assets/fonts/meiryo.woff') format('woff');
+}

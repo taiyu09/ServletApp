@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- せまんてぃっく よみこみ -->
-  <link rel="stylesheet" type="text/css" href="semantic-gen/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="semantic-mei/dist/semantic.min.css">
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-  <script src="semantic-gen/dist/semantic.min.js"></script>
+  <script src="semantic-mei/dist/semantic.min.js"></script>
   <script>
     $(document).ready(function(){
-         $('.ui.dropdown') .dropdown();
+      $('.ui.dropdown') .dropdown();
+      $('.ui.sticky').sticky();
    });
    </script>
   <!-- よみこみ おしまい -->
@@ -22,7 +23,7 @@
 <body>
 
   <!-- へっだ -->
-  <div class="ui fixed inverted massive menu">
+  <div class="ui fixed inverted massive menu" style="z-index:999">
     <div class="ui container">
       <a href="#" class="header item">
         <img class="logo" src="img/logo.png">
@@ -32,6 +33,12 @@
   </div>
   <!-- へっだ おしまい-->
 
+  <br><br><br><br>
+
+  <div class="ui container">
+    <br><br>
+    <h2 class="ui center aligned header">きょうは せまんてぃっく ゆーあい に ついて みんなに しょうかいするよ</h2>
+  </div>
 
   <!-- こんてんつ -->
   <div class="ui three column grid">
@@ -43,18 +50,12 @@
     <!-- こんてんつ ひだり おしまい -->
 
     <!-- こんてんつ まんなか -->
-    <div class="ten wide column">
-      <br><br>
+    <div class="ten wide container column">
 
 <!-- ここから めいん こんてんつ を かいていくよ -->
 <!-- こぴぺ を するときは よくよんで から つかってね-->
 <!---------------------------------------------------------------------------------------------------------->
-      <br><br>
-
-      <h2 class="ui header">せまんてぃっく ゆーあい に ついて みんなに しょうかいするよ</h2>
-
-      <br><br>
-
+      <br><br><br>
       <!-- へっだ -->
       <h1 class="ui header">へっだ H1</h1>
       <h2 class="ui header">へっだ H2</h2>
@@ -177,33 +178,53 @@
         </tbody>
       </table>
       <br>
+
       <!-- ぐりっど -->
       <h1 class="ui header">ぐりっど</h1>
       ぐりっどは はんいを さいだい １６こ に わけることが できるよ<br>
       <br>
-      ぺーじの みぎ と ひだり の よはくは これで つくっているんだ<br>
+      ぺーじの みぎ と ひだり の しろい よはくは これで つくっているんだ<br>
       <br>
       はばを していしない と おなじはばで  わけることが できるよ<br>
       <br>
+      みっつに わける
+      <br><br>
       <div class="ui three column grid">
-        <div class="grey column">1</div>
-        <div class="blue column">2</div>
-        <div class="grey column">3</div>
+        <div class="grey column">ひとつ</div>
+        <div class="blue column">ふたつ</div>
+        <div class="grey column">みっつ</div>
+      </div>
+      <br><br>
+      よっつに わける
+      <br><br>
+      <div class="ui four column grid">
+        <div class="grey column">ひとつ</div>
+        <div class="blue column">ふたつ</div>
+        <div class="grey column">みっつ</div>
+        <div class="blue column">よっつ</div>
+      </div>
+      <br><br>
+      せまい こんてんつは 16 = 5 + 6 + 5<br>
+      <br>
+      <div class="ui three column grid">
+        <div class="grey five wide column">5</div>
+        <div class="blue six wide column">6</div>
+        <div class="grey five wide column">5</div>
       </div>
       <br><br>
       ぼくが よく つかっている 16 = 4 + 8 + 4<br>
       <br>
       <div class="ui three column grid">
-        <div class="grey four wide column">1</div>
-        <div class="blue eight wide column">2</div>
-        <div class="grey four wide column">3</div>
+        <div class="grey four wide column">4</div>
+        <div class="blue eight wide column">8</div>
+        <div class="grey four wide column">4</div>
       </div>
       <br><br>
       このぺーじは 16 = 3 + 10 + 3<br>
       <br>
       <div class="ui three column grid">
-        <div class="grey three wide column">1</div>
-        <div class="blue ten wide column">2</div>
+        <div class="grey three wide column">3</div>
+        <div class="blue ten wide column">10</div>
         <div class="grey three wide column">3</div>
       </div>
       <br><br>
@@ -211,26 +232,149 @@
       <br>
       <div class="ui sixteen column grid">
         <div class="grey one wide column">1</div>
-        <div class="blue one wide column">2</div>
-        <div class="grey one wide column">3</div>
-        <div class="blue one wide column">4</div>
-        <div class="grey one wide column">5</div>
-        <div class="blue one wide column">6</div>
-        <div class="grey one wide column">7</div>
-        <div class="blue one wide column">8</div>
-        <div class="grey one wide column">9</div>
-        <div class="blue one wide column">10</div>
-        <div class="grey one wide column">11</div>
-        <div class="blue one wide column">12</div>
-        <div class="grey one wide column">13</div>
-        <div class="blue one wide column">14</div>
-        <div class="grey one wide column">15</div>
-        <div class="blue one wide column">16</div>
+        <div class="blue one wide column">1</div>
+        <div class="grey one wide column">1</div>
+        <div class="blue one wide column">1</div>
+        <div class="grey one wide column">1</div>
+        <div class="blue one wide column">1</div>
+        <div class="grey one wide column">1</div>
+        <div class="blue one wide column">1</div>
+        <div class="grey one wide column">1</div>
+        <div class="blue one wide column">1</div>
+        <div class="grey one wide column">1</div>
+        <div class="blue one wide column">1</div>
+        <div class="grey one wide column">1</div>
+        <div class="blue one wide column">1</div>
+        <div class="grey one wide column">1</div>
+        <div class="blue one wide column">1</div>
+      </div>
+      <br><br>
+      うえでは わかりやすいように からむに いろを つけているよ<br>
+      もちろん いろを つけないことも できるよ<br>
+      <br>
+      <div class="ui three column grid">
+        <div class="column">ひとつ</div>
+        <div class="column">ふたつ</div>
+        <div class="column">みっつ</div>
+      </div>
+      <br>
+      <div class="ui three column grid">
+        <div class="four wide column">4</div>
+        <div class="eight wide column">8</div>
+        <div class="four wide column">4</div>
+      </div>
+      <div class="ui sixteen column grid">
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
+        <div class="one wide column">1</div>
       </div>
       <br><br>
 
+      <!-- あいふれーむ -->
+      <h1 class="ui header">あいふれーむ</h1>
+      あいふれーむは いつもどおり よみこむことが できるよ
+      <br><br>
+      <iframe width="100%" src="https://www.youtube.com/embed/E2oRrLUxWKo" title="愛の詩（V3）-初音ミク for lamazeP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio: 16 / 9;"></iframe>
+
 <!---------------------------------------------------------------------------------------------------------->
       <br><br>
+      <!-- こうこく -->
+      <div class="ui left close rail" style="width:22%">
+        <div class="ui sticky">
+          <br><br><br><br><br>
+          <script type="text/javascript">
+            var imglist = new Array(
+              "diva_f2_glory.jpg",
+              "diva_f2_miraclepaint.jpg",
+              "diva_f2_soundlessvoice.jpg",
+              "diva_f2_helloworker.jpg",
+              "diva_f2_musunde.jpg",
+              "diva_f2_spica.jpg",
+              "diva_f2_akatsuki.jpg",
+              "diva_f2_karakuri.jpg",
+              "diva_f2_narisumashi.jpg",
+              "diva_f2_sukikirai.jpg",
+              "diva_f2_blackjack.jpg",
+              "diva_f2_knife.jpg",
+              "diva_f2_nijigen.jpg",
+              "diva_f2_tsugaikogarashi.jpg",
+              "diva_f2_cantarella.jpg",
+              "diva_f2_kokoro.jpg",
+              "diva_f2_nisoku.jpg",
+              "diva_f2_uraomote.jpg",
+              "diva_f2_cloverclub.jpg",
+              "diva_f2_koufuku.jpg",
+              "diva_f2_packaged.jpg",
+              "diva_f2_wim.jpg",
+              "diva_f2_colorful.jpg",
+              "diva_f2_kowase.jpg",
+              "diva_f2_para.jpg",
+              "diva_f2_yubikiri.jpg",
+              "diva_f2_decorator.jpg",
+              "diva_f2_lukaluka.jpg",
+              "diva_f2_romio.jpg",
+              "diva_f2_double.jpg",
+              "diva_f2_melt.jpg",
+              "diva_f2_roshin.jpg",
+              "diva_f2_envi.jpg",
+              "diva_f2_meteor.jpg",
+              "diva_f2_sakuranoame.jpg",
+              "diva_f2_erase.jpg",
+              "diva_f2_mikumiku.jpg",
+              "diva_f2_sennen.jpg",
+            );
+            var selectnum = Math.floor(Math.random() * imglist.length);
+            var output = "<img class='ui small image' src=img/diva/" + imglist[selectnum] + " " + "style='width:100%'>";
+            document.write(output);
+          </script>
+        </div>
+      </div>
+
+      <div class="ui right close rail" style="width:20%">
+        <div class="ui sticky">
+          <br><br><br><br><br>
+          <script type="text/javascript">
+            var imglist = new Array(
+              "12536689765881703821.png",
+              "16474279392105344386.png",
+              "17364710402400065091.png",
+              "17499028435002086689.png",
+              "1765849380662638025.png",
+              "5596086181742349683.png",
+            );
+            var selectnum = Math.floor(Math.random() * imglist.length);
+            var output = "<img class='ui small image' src=img/dmm/" + imglist[selectnum] + " " + "style='width:100%'>";
+            document.write(output);
+          </script>
+          <br>
+          <script type="text/javascript">
+            var imglist = new Array(
+              "1VijN7o.gif",
+              "E5Qk5RfUcAU1hOj.jpg",
+              "LVjyCDT.gif",
+              "E2RrvgXVEAIpFqN.jpg",
+              "08309d12.jpg",
+            );
+            var selectnum = Math.floor(Math.random() * imglist.length);
+            var output = "<img class='ui small image' src=img/ntr/" + imglist[selectnum] + " " + "style='width:100%'>";
+            document.write(output);
+          </script>
+        </div>
+      </div>
+      <!-- こうこく おわり -->
     </div>
     <!-- こんてんつ まんなか おしまい -->
 
@@ -239,9 +383,16 @@
 
     </div>
     <!-- こんてんつ みぎ おしまい -->
+
   </div>
   <!-- こんてんつ おしまい-->
 
+  <div class="ui container">
+    <br><br>
+    <h2 class="ui center aligned header">ここまで よんでくれて ありがとう</h2>
+  </div>
+
+<br><br><br>
 
   <!-- ふった -->
   <div class="ui inverted vertical footer segment" style="min-height: 25vh;">
@@ -251,8 +402,10 @@
     </div>
   </div>
   <!-- ふった おしまい -->
-
-
-
+  <script>
+        $('.ui.sticky').sticky({
+            context: '#mid',
+        })
+    </script>
 </body>
 </html>

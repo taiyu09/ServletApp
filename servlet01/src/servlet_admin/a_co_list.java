@@ -2,6 +2,7 @@ package servlet_admin;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,16 +16,11 @@ public class a_co_list extends HttpServlet {
 
 
 
-
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-	}
-
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("WEB-INF/jsp/a_co_list.jsp");
-		doGet(request, response);
+		RequestDispatcher dispatcher =
+				request.getRequestDispatcher("WEB-INF/jsp/admin/a_co_list.jsp");
+		dispatcher.forward(request, response);
 	}
 
 }
+

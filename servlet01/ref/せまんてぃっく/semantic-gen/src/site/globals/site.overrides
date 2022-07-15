@@ -1,0 +1,10 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@font-face  {
+    font-family: 'fontname';
+    src:url('themes/basic/assets/fonts/GenEiGothicM-Regular.eot'); 
+    src:url('themes/basic/assets/fonts/GenEiGothicM-Regular.eot?#') format('eot'),    
+        url('themes/basic/assets/fonts/GenEiGothicM-Regular.woff') format('woff');
+}

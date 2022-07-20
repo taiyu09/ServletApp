@@ -1,4 +1,4 @@
-package dao;
+package db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -69,13 +69,13 @@ public class so_fucking_ez {
 					+ "	'593ca65d6d1e68ca4504fd0f5457fba4198804ed5f60592649e7046ae4aee9c7e4e755445f8d59b04b3a70e0e825e53a6457917cfb422a4ae03b0b9a69c9028',\r\n"
 					+ "	'salt',\r\n"
 					+ "	't.ogasawara.sys21@morijyobi.ac.jp',\r\n"
-					+ "	'小笠原太優'\r\n"
+					+ "	'ゆーざたいゆ'\r\n"
 					+ "	);\r\n"
 					+ "insert into Admin values(\r\n"
 					+ "	'taiyu.a',\r\n"
 					+ "	'593ca65d6d1e68ca4504fd0f5457fba4198804ed5f60592649e7046ae4aee9c7e4e755445f8d59b04b3a70e0e825e53a6457917cfb422a4ae03b0b9a69c9028',\r\n"
 					+ "	'salt',\r\n"
-					+ "	'小笠原太優'\r\n"
+					+ "	'あどみんたいゆ'\r\n"
 					+ "	);\r\n"
 					+ "insert into Year values\r\n"
 					+ "	(00,'それ以前'),\r\n"

@@ -8,27 +8,25 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import scopedata.Admin;
+import scopedata.Region;
 
-public class SelectCompany {
-	public List<Admin> selectAll() {
-		List<Admin> dlist = new ArrayList<Admin>();
+public class RegionDAO {
+	public List<Region> selectAll() {
+		List<Region> dlist = new ArrayList<Region>();
 		PreparedStatement pstmt;
 		Connection con = null;
 		String sql = null;
 		try {
 			Class.forName("org.h2.Driver");
 			con = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/servlet01","sa","morijyobi");
-			sql = "select * from user;";
+			sql = "select * from region;";
 			pstmt = con.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()) {
-				String id = rs.getString("id");
-				String pass = rs.getString("pass");
-				String salt = rs.getString("salt");
+				int id = rs.getInt("id");
 				String name = rs.getString("name");
-				Admin admin = new Admin(id,pass,salt,name);
-				dlist.add(admin);
+				Region region = new Region(id,name);
+				dlist.add(region);
 			}
 		} catch(Exception e) {
 			System.out.println(e.getMessage());

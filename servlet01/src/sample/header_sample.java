@@ -17,6 +17,7 @@ public class header_sample extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//accountを作成する
 		Account account = new Account("管理者","taiyu.o","小笠原太優");
 		HttpSession session = request.getSession();
 		session.setAttribute("account",account);

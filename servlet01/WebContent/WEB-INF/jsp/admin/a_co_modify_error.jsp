@@ -107,9 +107,9 @@
 				<br><br>
 
 
-			<form style="width:45%; margin:0 auto;"action="/servlet01/a_co_modify" name="form1" method="get">
+			<form style="width:45%; margin:0 auto;"action="/servlet01/a_co_list" name="form2" method="get">
 				<br>
-					<a class="fluid ui huge button" href="javascript:form1.submit()" style="size">戻る</a>
+					<a class="fluid ui huge button" href="javascript:form2.submit()" style="size">戻る</a>
 			</form>
 				<br><br>
 				<div class="four wide column"></div>

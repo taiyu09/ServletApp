@@ -12,9 +12,11 @@ import javax.servlet.http.HttpSession;
 
 import scopedata.Account;
 
-
-@WebServlet("/a_co_list")
-public class a_co_list extends HttpServlet {
+/**
+ * Servlet implementation class a_co_modify_confirm
+ */
+@WebServlet("/a_co_modify_confirm")
+public class a_co_modify_confirm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 
@@ -24,9 +26,10 @@ public class a_co_list extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("account",account);
 		RequestDispatcher dispatcher =
-				request.getRequestDispatcher("WEB-INF/jsp/admin/a_co_list.jsp");
+				request.getRequestDispatcher("WEB-INF/jsp/admin/a_co_modify_confirm.jsp");
 		dispatcher.forward(request, response);
 	}
 
 }
+
 

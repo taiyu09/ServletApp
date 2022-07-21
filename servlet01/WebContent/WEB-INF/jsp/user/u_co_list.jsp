@@ -27,7 +27,7 @@
 					<td></td>
 					<td></td>
 					<td><div class="ui center aligned">
-							<a href="u_co_info">
+							<a href="u_co_search">
 								<font size="4">詳細</font>
 							</a>
 						</div>

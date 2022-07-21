@@ -13,6 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import dao.AdminDAO;
 import dao.CompanyDAO;
+import dao.CompanyJoinDAO;
 import dao.IndustryDAO;
 import dao.RegionDAO;
 import dao.SalaryDAO;
@@ -20,6 +21,7 @@ import dao.UserDAO;
 import dao.YearDAO;
 import scopedata.Admin;
 import scopedata.Company;
+import scopedata.CompanyJoin;
 import scopedata.Industry;
 import scopedata.Region;
 import scopedata.Salary;
@@ -67,6 +69,11 @@ public class db_checker extends HttpServlet {
 		CompanyDAO selectcompany = new CompanyDAO();
 		List<Company> clist = selectcompany.selectAll();
 		session.setAttribute("cList", clist);
+
+		//companyjoin
+		CompanyJoinDAO selectcompanyjoin = new CompanyJoinDAO();
+		List<CompanyJoin> cjlist = selectcompanyjoin.selectAll();
+		session.setAttribute("cjList", cjlist);
 
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher("WEB-INF/jsp/sample/db_checker.jsp");

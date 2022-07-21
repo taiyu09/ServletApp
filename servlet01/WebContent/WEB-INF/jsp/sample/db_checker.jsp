@@ -7,6 +7,7 @@
 <%@ page import = "scopedata.Industry"%>
 <%@ page import = "scopedata.Salary"%>
 <%@ page import = "scopedata.Company"%>
+<%@ page import = "scopedata.CompanyJoin"%>
 <%@ page import = "java.util.List" %>
 <%
 	List<User> ulist = (List<User>)session.getAttribute("uList");
@@ -16,6 +17,7 @@
 	List<Industry> ilist = (List<Industry>)session.getAttribute("iList");
 	List<Salary> slist = (List<Salary>)session.getAttribute("sList");
 	List<Company> clist = (List<Company>)session.getAttribute("cList");
+	List<CompanyJoin> cjlist = (List<CompanyJoin>)session.getAttribute("cjList");
 %>
 <jsp:include page="../template/template_top.jsp"/>
 
@@ -145,6 +147,31 @@
 						<td> <%= c.getIndustry_id() %> </td>
 						<td> <%= c.getSalary_id() %> </td>
 						<td> <%= c.getRequire() %> </td>
+					</tr>
+					<% } %>
+				</tbody>
+			</table>
+			<h1 class="ui dividing header">CompanyJoin</h1>
+			<table class="ui celled table">
+				<thead>
+					<th>id</th>
+					<th>name</th>
+					<th>year</th>
+					<th>region</th>
+					<th>industry</th>
+					<th>salary</th>
+					<th>require</th>
+				</thead>
+				<tbody>
+					<% for(CompanyJoin cj : cjlist) { %>
+					<tr>
+						<td> <%= cj.getId() %> </td>
+						<td> <%= cj.getName() %> </td>
+						<td> <%= cj.getYear() %> </td>
+						<td> <%= cj.getRegion() %> </td>
+						<td> <%= cj.getIndustry() %> </td>
+						<td> <%= cj.getSalary() %> </td>
+						<td> <%= cj.getRequire() %> </td>
 					</tr>
 					<% } %>
 				</tbody>

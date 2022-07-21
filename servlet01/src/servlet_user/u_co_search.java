@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.CompanyJoinDAO;
+import dao.YearDAO;
 import scopedata.Account;
 import scopedata.CompanyJoin;
+import scopedata.Year;
 
 @WebServlet("/u_co_search")
 public class u_co_search extends HttpServlet {
@@ -23,6 +25,11 @@ public class u_co_search extends HttpServlet {
 		Account account = new Account("管理者","taiyu.o","小笠原太優");
 		HttpSession session = request.getSession();
 		session.setAttribute("account",account);
+
+		//year
+		YearDAO selectyear = new YearDAO();
+		List<Year> ylist = selectyear.selectAll();
+		session.setAttribute("yList", ylist);
 
 		//companyjoin
 		CompanyJoinDAO selectcompanyjoin = new CompanyJoinDAO();

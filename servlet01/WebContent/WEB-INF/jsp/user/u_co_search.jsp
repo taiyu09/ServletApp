@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import = "scopedata.Year"%>
 <%@ page import = "scopedata.CompanyJoin"%>
 <%@ page import = "java.util.List" %>
 <%
+	List<Year> ylist = (List<Year>)session.getAttribute("yList");
 	List<CompanyJoin> cjlist = (List<CompanyJoin>)session.getAttribute("cjList");
 %>
 <jsp:include page="../template/template_top.jsp"/>
@@ -14,6 +16,25 @@
 			<h2 align="center">取引先企業検索</h2>
 			<br><br>
 			<form action="/servret01/u_co_info" name="info" method="get">
+
+			<div class="field">
+				<label>年度</label>
+   				<div class="ui selection dropdown">
+					<input type="hidden" name="gender">
+					<i class="dropdown icon"></i>
+ 					<div class="default text">年度を選択してください</div>
+					<div class="menu">
+						<% for(Year y : ylist) { %>
+							<div class="item" data-value= <%= y.getId() %> ><%= y.getName() %></div>
+						<% } %>
+					</div>
+				</div>
+			</div>
+
+
+				<% for(CompanyJoin cj : cjlist) { %>
+				<% } %>
+
 				<div align="center">企業名:<input type="text" name=name></div><br>
 				<% for(CompanyJoin cj : cjlist) { %>
 				<div align="center">年　度:

@@ -5,8 +5,8 @@
 <div class="ui segment">
 	<div style="width:100%;margin:0 auto">
 		<h2 align="center">企業詳細情報</h2>
-		
   	</div>
+  	<div align="center"></div><iframe width="100%" src="" title="PDF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio: 16 / 9;"></iframe>
 </div>
 <br><br>
 

@@ -10,7 +10,7 @@
 				<table class="ui celled table">
 				<div align="center">
 				<br>
-				<h2>修正内容確認</h2>
+				<h2>削除内容確認</h2>
 				<br><br>
 
 
@@ -36,7 +36,7 @@
 				</tbody>
 
 				</table>
-					<form action="/servlet01/a_co_modify_result" name="form1" method="get">
+					<form action="/servlet01/a_co_delete_result" name="form1" method="get">
 					<br>
 					<a class="fluid ui primary huge button" href="javascript:form1.submit()" style="size">上記内容に修正</a>
 					</form>
@@ -48,7 +48,7 @@
 					<br><br>
 
 
-				<form style="width:80%; margin:0 auto;"action="/servlet01/a_co_modify" name="form2" method="get">
+				<form style="width:80%; margin:0 auto;"action="/servlet01/a_co_list" name="form2" method="get">
 					<br>
 					<a class="fluid ui huge button" href="javascript:form2.submit()" style="size">戻る</a>
 				</form>

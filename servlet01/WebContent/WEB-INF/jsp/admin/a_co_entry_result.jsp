@@ -5,13 +5,13 @@
 	<div class="four wide column"></div>
 	<div class="eight wide column">
 		<br><br>
-		<div class="ui segment">
+		<div class="ui  segment">
 		<br><br>
-			<h2 class="ui center aligned header">修正が完了しました。</h2>
+			<h2 class="ui center aligned header">登録が完了しました。</h2>
 		<br><br>
 				<div class="ui center aligned container">
-					<a href="a_co_list">
-						<h3>企業一覧に戻る</h3>
+					<a href="a_menu">
+						<h3>メニューに戻る</h3>
 					</a>
 					<br><br><br>
 				</div>

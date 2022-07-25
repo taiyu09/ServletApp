@@ -9,8 +9,8 @@
 		<br><br>
 		<div class="ui blue segment">
 			<h2 class="ui center aligned header">利用者ログイン</h2>
-			<form class="ui form" action="#" method="get" style="width:90%;margin:0 auto">
-				<div class="field">
+			<form class="ui form" action="#" method="get">
+				<div class="center field" style="width:90%;margin:0 auto">
  					<label>ログインID</label>
  					<div class="ui input">
 						<input type="text" name="id" required>

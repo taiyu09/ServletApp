@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<jsp:include page="../template/template_top.jsp"/>
+<jsp:include page="../template/template_top.jsp">
+	<jsp:param name="header_url" value="/servlet01/u_login"/>
+</jsp:include>
 
 <div class="ui three column grid">
 	<div class="four wide column"></div>

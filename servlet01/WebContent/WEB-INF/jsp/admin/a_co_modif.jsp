@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <jsp:include page="../template/template_top.jsp"/>
 
 <div class="ui three column grid">
@@ -9,13 +10,12 @@
 		<div class="ui segment">
 			<h2 align="center">企業情報修正</h2>
 
-
-
 					<br>
         		<div style="position:absolute;  left:95px;">企業名</div><br>
         			<div align="center "><input style="margin:0 auto;"type="text" id="name" name="name" required
       				 	minlength="10" maxlength="10" size="40">
-      				 </div>
+      				 	</div>
+
       				  <br><br>
         		<div style="position:absolute; left:95px;">年度</div><br>
         			<div align="center ">
@@ -82,7 +82,7 @@
 
 
 		<div style="width:80%; margin:0 auto">
-			<form action="/servlet01/a_co_modify_result" name="form1" method="get">
+			<form action="/servlet01/a_co_modify_confirm" name="form1" method="get">
 				<br>
 				<a class="fluid ui primary huge button" href="javascript:form1.submit()" style="size">次へ</a>
 			</form>

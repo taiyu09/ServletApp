@@ -5,9 +5,9 @@
 	<div class="four wide column"></div>
 	<div class="eight wide column">
 		<br><br>
-		<div class="ui segment">
+		<div class="ui  segment">
 		<br><br>
-			<h2 class="ui center aligned header">修正が完了しました。</h2>
+			<h2 class="ui center aligned header">削除が完了しました。</h2>
 		<br><br>
 				<div class="ui center aligned container">
 					<a href="a_co_list">

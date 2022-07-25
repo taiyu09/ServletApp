@@ -9,7 +9,7 @@
 		<div class="ui segment">
 
 
-			<h2 align="center">企業情報修正</h2>
+			<h2 align="center">企業登録</h2>
 					<br>
 				<div style="position:absolute;  left:95px;width:65%;">
       			<div class="ui negative message">
@@ -25,9 +25,8 @@
 					<br>
 					<br>
 					<br>
-
         		<div style="position:absolute;  left:95px;">企業名</div><br>
-        			<div align="center "><input style="margin:0 auto;"type="text"required
+        			<div align="center "><input style="margin:0 auto;"type="text" id="name" name="name" required
       				 	minlength="10" maxlength="10" size="40">
       				 </div>
       				  <br><br>
@@ -108,7 +107,7 @@
 				<br><br>
 
 
-			<form style="width:45%; margin:0 auto;"action="/servlet01/a_co_list" name="form2" method="get">
+			<form style="width:45%; margin:0 auto;"action="/servlet01/a_menu" name="form2" method="get">
 				<br>
 					<a class="fluid ui huge button" href="javascript:form2.submit()" style="size">戻る</a>
 			</form>

@@ -11,7 +11,7 @@
 		<br><br>
 		<div class="ui blue segment">
 			<h2 class="ui center aligned header">利用者ログイン</h2>
-			<form class="ui form" action="#" method="post" style="width:90%;margin:0 auto">
+			<form class="ui form" action="/servlet01/u_menu" method="post" style="width:90%;margin:0 auto">
 				<div class="field">
  					<label>ログインID</label>
  					<div class="ui input">

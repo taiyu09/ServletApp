@@ -1,22 +1,59 @@
-package servlet_user;
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
-import java.io.IOException;
+<jsp:include page="../template/template_top.jsp"/>
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+<div class="ui three column grid">
+	<div class="four wide column"></div>
+	<div class="eight wide column">
+		<br><br>
+		<div class="ui blue segment">
+			<h2 class="ui center aligned header">利用者ログイン</h2>
+			<form class="ui form" action="#" method="get" style="width:90%;margin:0 auto">
+				<div class="field">
+ 					<div class="ui negative message">
+        				<div class="header">
+          					ログインエラー
+       		 		</div>
+        				<p><font size="1">ログインIDまたはパスワードが間違っています</font></p>
+      			</div>
+				</div>
+				<div class="field">
+ 					<label>ログインID</label>
+ 					<div class="ui input">
+						<input type="text" name="id" required>
+					</div>
+				</div>
+				<br>
+				<div class="field">
+ 					<label>パスワード</label>
+ 					<div class="ui input">
+						<input type="text" name="id" required>
+					</div>
+				</div>
+				<br>
+				<div class="ui center aligned container">
+					<a href="https://morijyobi.ac.jp/">
+						パスワードを忘れた場合はこちら
+					</a>
+				</div>
+			</form>
+		</div>
+		<br>
+		<div class="ui message">
+			<div style="width:90%;margin:0 auto">
+				<a href="#">新規登録はこちら >></a>
+			</div>
+		</div>
+		<br>
+		<div class="ui message">
+  			<div style="width:90%;margin:0 auto">
+				<a href="#">管理者ログインはこちら >></a>
+			</div>
+		</div>
+		<br><br>
+	</div>
+	<div class="four wide column"></div>
+</div>
 
-@WebServlet("/login_err")
-public class login_err extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher =
-				request.getRequestDispatcher("WEB-INF/jsp/user/login_err.jsp");
-		dispatcher.forward(request, response);
-	}
-
-}
+<jsp:include page="../template/template_bottom.jsp"/>

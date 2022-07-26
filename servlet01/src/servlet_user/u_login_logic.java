@@ -17,5 +17,4 @@ public class u_login_logic extends HttpServlet {
 		String id = request.getParameter("id");
 		String pass = request.getParameter("pass");
 	}
-
 }

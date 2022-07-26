@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <jsp:include page="../template/template_top.jsp"/>
+
 <div class="ui three column grid">
 	<div class="four wide column"></div>
 	<div class="eight wide column">
@@ -35,13 +36,5 @@
 		<br>
 	</div>
 </div>
-
-
-
-
-
-
-
-
 
 <jsp:include page="../template/template_bottom.jsp"/>

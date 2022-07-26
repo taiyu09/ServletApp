@@ -11,12 +11,12 @@
 		<br><br>
 		<div class="ui segment">
 			<div style="width:90%;margin:0 auto">
-				<form action="/servlet01/" name="form1" method="get">
+				<form action="/servlet01/u_login" name="form1" method="get">
 					<br>
 					<a class="fluid ui primary huge button" href="javascript:form1.submit()">利用者</a>
 				</form>
 				<br><br>
-				<form action="#" name="form2" method="get">
+				<form action="/servlet01/a_login" name="form2" method="get">
 					<br>
 					<a class="fluid ui primary huge button" href="javascript:form2.submit()">管理者</a>
 				</form>

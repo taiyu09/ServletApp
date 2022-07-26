@@ -17,9 +17,9 @@
 					<a class="fluid ui primary huge button" href="javascript:form1.submit()" style="size">企業一覧</a>
 				</form>
 				<br><br>
-				<form action="servlet01/a_co_entry" name="form2" method="get">
+				<form action="/servlet01/a_co_entry" name="form2" method="get">
 					<br>
-					<a class="fluid ui primary huge button" href="javascript:form2.submit()">企業登録</a>
+					<a class="fluid ui primary huge button" href="javascript:form2.submit()" style="size">企業登録</a>
 				</form>
 			</div>
 		</div>

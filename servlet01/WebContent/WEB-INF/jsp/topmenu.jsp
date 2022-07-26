@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<jsp:include page="template/template_top.jsp"/>
+<jsp:include page="template/template_top.jsp">
+	<jsp:param name="header_url" value="/servlet01/topmenu"/>
+</jsp:include>
 
 <div class="ui three column grid">
 	<div class="four wide column"></div>
@@ -9,7 +11,7 @@
 		<br><br>
 		<div class="ui segment">
 			<div style="width:90%;margin:0 auto">
-				<form action="#" name="form1" method="get">
+				<form action="/servlet01/" name="form1" method="get">
 					<br>
 					<a class="fluid ui primary huge button" href="javascript:form1.submit()">利用者</a>
 				</form>

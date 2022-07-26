@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%
+  request.setCharacterEncoding("UTF-8");
+  String header_url = request.getParameter("header_url");
+%>
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -21,6 +24,8 @@
 	<title>取引先企業検索システム</title>
 </head>
 <body>
-	<jsp:include page="header.jsp"/>
+	<jsp:include page="header.jsp">
+		<jsp:param name="header_url" value="<%= header_url  %>" />
+	</jsp:include>
 	<div class="ui container" style="min-height: 75vh;">
 	<br><br><br><br>

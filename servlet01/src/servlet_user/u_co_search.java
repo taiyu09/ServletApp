@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.CompanyJoinDAO;
-import dao.YearDAO;
+import dao.DropdownMaker;
 import scopedata.Account;
 import scopedata.CompanyJoin;
-import scopedata.Year;
+import scopedata.Dropdown;
 
 @WebServlet("/u_co_search")
 public class u_co_search extends HttpServlet {
@@ -26,10 +26,10 @@ public class u_co_search extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("account",account);
 
-		//year
-		YearDAO selectyear = new YearDAO();
-		List<Year> ylist = selectyear.selectAll();
-		session.setAttribute("yList", ylist);
+		//ddm
+		DropdownMaker ddm = new DropdownMaker();
+		Dropdown dropdown = ddm.getDropdown();
+		session.setAttribute("dropdown", dropdown);
 
 		//companyjoin
 		CompanyJoinDAO selectcompanyjoin = new CompanyJoinDAO();

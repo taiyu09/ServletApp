@@ -21,7 +21,7 @@
 						<input type="password" name="id" required>
 					</div>
 				</div>
-				<br>
+				<br><br>
 				<input class="fluid ui primary button" type="submit" value="ログイン">
 			</form>
 			</div>

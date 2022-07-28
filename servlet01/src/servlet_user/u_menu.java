@@ -15,7 +15,7 @@ public class u_menu extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher =
-				request.getRequestDispatcher("WEB-INF/jsp/user/u.menu.jsp");
+				request.getRequestDispatcher("WEB-INF/jsp/user/u_menu.jsp");
 		dispatcher.forward(request, response);
 	}
 

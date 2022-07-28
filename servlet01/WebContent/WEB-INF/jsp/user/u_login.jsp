@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <jsp:include page="../template/template_top.jsp">
-	<jsp:param name="header_url" value="/servlet01/u_login"/>
+	<jsp:param name="header_url" value="/servlet01/topmenu"/>
 </jsp:include>
 
 <div class="ui three column grid">
@@ -11,8 +11,8 @@
 		<br><br>
 		<div class="ui blue segment">
 			<h2 class="ui center aligned header">利用者ログイン</h2>
-			<form class="ui form" action="#" method="get">
-				<div class="center field" style="width:90%;margin:0 auto">
+			<form class="ui form" action="/servlet01/u_menu" method="post" style="width:90%;margin:0 auto">
+				<div class="field">
  					<label>ログインID</label>
  					<div class="ui input">
 						<input type="text" name="id" required>
@@ -21,7 +21,7 @@
 				<div class="field">
  					<label>パスワード</label>
  					<div class="ui input">
-						<input type="password" name="id" required>
+						<input type="password" name="pass" required>
 					</div>
 				</div>
 				<br>
@@ -37,13 +37,13 @@
 		<br>
 		<div class="ui message">
 			<div style="width:90%;margin:0 auto">
-				<a href="#">新規登録はこちら >></a>
+				<a href="/servlet01/u_entry">新規登録はこちら >></a>
 			</div>
 		</div>
 		<br>
 		<div class="ui message">
   			<div style="width:90%;margin:0 auto">
-				<a href="#">管理者ログインはこちら >></a>
+				<a href="/servlet01/a_login">管理者ログインはこちら >></a>
 			</div>
 		</div>
 		<br><br>

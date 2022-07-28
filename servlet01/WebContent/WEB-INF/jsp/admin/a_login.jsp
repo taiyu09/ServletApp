@@ -5,7 +5,7 @@
 <div class="ui three column grid">
 	<div class="four wide column"></div>
 	<div class="eight wide column">
-		<br><br>
+		<br><br><br>
 		<div class="ui red segment">
 			<h2 class="ui center aligned header">管理者ログイン</h2>
 			<div style="width:90%;margin:0 auto">

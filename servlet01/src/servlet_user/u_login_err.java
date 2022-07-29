@@ -15,7 +15,7 @@ public class u_login_err extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher =
-				request.getRequestDispatcher("WEB-INF/jsp/user/login_err.jsp");
+				request.getRequestDispatcher("WEB-INF/jsp/user/u_login_err.jsp");
 		dispatcher.forward(request, response);
 	}
 

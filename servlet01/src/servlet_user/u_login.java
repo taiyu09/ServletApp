@@ -8,9 +8,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.UserDAO;
 import model.MakeHash;
+import scopedata.Account;
 import scopedata.User;
 
 @WebServlet("/u_login")
@@ -33,6 +35,7 @@ public class u_login extends HttpServlet {
 		// id で DB 検索
 		User result = u.select(id);
 
+		// ソルトを抽出して結合
 		String passalt = pass + result.getSalt();
 
 		// ハッシュ生成用
@@ -46,6 +49,10 @@ public class u_login extends HttpServlet {
 			if(result != null) {
 				// id ヒットあり pass 正解
 				path = "WEB-INF/jsp/user/u_menu.jsp";
+				// Accountを作成しセッションに保存
+				Account account = new Account("利用者",result.getId(),result.getName());
+				HttpSession session = request.getSession();
+				session.setAttribute("account",account);
 			} else {
 				// id ヒットあり pass 間違い
 				path = "WEB-INF/jsp/user/u_login_err.jsp";

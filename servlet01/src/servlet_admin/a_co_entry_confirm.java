@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import dao.YearDAO;
 import scopedata.Account;
+import scopedata.Year;
 
 /**
  * Servlet implementation class a_co_entry_confirm
@@ -30,8 +32,11 @@ public class a_co_entry_confirm extends HttpServlet {
 		String name = request.getParameter("name");
 		session.setAttribute("name",name);
 
-		String year = request.getParameter("year");
-		session.setAttribute("year",year);
+		String year_id = request.getParameter("year");
+		YearDAO ydao = new YearDAO();
+		Year year = ydao.select(year_id);
+		System.out.println(year.getName());
+		session.setAttribute("year",year.getName());
 
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher("WEB-INF/jsp/admin/a_co_entry_confirm.jsp");

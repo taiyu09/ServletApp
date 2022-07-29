@@ -114,8 +114,8 @@
 			</div>
       				 	 <br><br>
         		<div style="position:absolute; top:670px; left:95px;">PDFファイル</div>
-        			<div align="right"><input auto; type="file"id="avatar" name="avatar"
-       					accept="image/png, image/jpeg">
+        			<div align="right">
+        				<input auto; type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
        				<div>
 
 

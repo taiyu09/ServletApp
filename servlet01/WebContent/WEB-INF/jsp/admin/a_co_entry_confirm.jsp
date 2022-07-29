@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String name = request.getParameter("name");
+	String year = request.getParameter("year");
+%>
 <jsp:include page="../template/template_top.jsp"/>
 <div class="ui three column grid">
 	<div class="one wide column"></div>
@@ -16,8 +20,8 @@
 
 				<thead>
 
-        			<tr ><td ><div align="center">企業名</td></div><td></td></tr>
-        			<tr ><td><div align="center">年度</td></div><td></td></tr>
+        			<tr ><td ><div align="center">企業名</td></div><td><%= name %></td></tr>
+        			<tr ><td><div align="center">年度</td></div><td><%= year %></td></tr>
         			<tr ><td><div align="center">所在県</td></div><td></td></tr>
         			<tr ><td><div align="center">業種</td></div><td></td></tr>
         			<tr ><td><div align="center">初任給</td></div><td></td></tr>
@@ -27,13 +31,6 @@
 				</thead>
 
 
-
-
-
-
-
-
-				</tbody>
 
 				</table>
 					<form action="/servlet01/a_co_entry_result" name="form1" method="get">

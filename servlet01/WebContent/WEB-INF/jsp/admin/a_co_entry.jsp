@@ -19,7 +19,7 @@
 		<div class="ui segment">
 			<h2 align="center">企業登録</h2>
 
-
+<form class="ui form" action="/servlet01/a_co_entry_confirm" method="get">
 
 					<br>
         		<div class="inline field">
@@ -30,25 +30,28 @@
 
 
  				<div align="center "><div class="ui input" style="width:70%;">
-					<input type="text" name="id" required>
+					<input type="text" name="name" required>
 				</div>
 			</div>
       				  <br><br>
-        			<div class="inline field">
+        <div class="inline field">
         		<div style="position:absolute;  left:95px;">
-        		<label style="vertical-align: middle;">年　度　</label>
+        			<label style="vertical-align: middle;">年　度　</label>
         		</div>
         		<br>
-        			<div align="center "><div class="ui selection dropdown" style="width:70%">
-			<i class="dropdown icon"></i>
-			<div class="default text"></div>
-				<div class="menu">
-				<% for(Year y : dropdown.getYears()) { %>
-					<div class="item" data-value="<%= y.getId() %>"><%= y.getName() %></div>
-				<% } %>
+        		<div align="center ">
+        			<div class="ui selection dropdown" style="width:70%">
+        				<input type="hidden" name="year">
+						<i class="dropdown icon"></i>
+						<div class="default text"></div>
+						<div class="menu">
+						<% for(Year y : dropdown.getYears()) { %>
+							<div class="item" data-value="<%= y.getId() %>"><%= y.getName() %></div>
+						<% } %>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
       				  	<br><br>
       			<div class="inline field">
       			<div style="position:absolute;  left:95px;">
@@ -106,7 +109,7 @@
 
 
  				<div align="center "><div class="ui input" style="width:70%;">
-					<input type="text" name="id" required>
+					<input type="text" name="id">
 				</div>
 			</div>
       				 	 <br><br>
@@ -127,11 +130,9 @@
 
 
 		<div style="width:80%; margin:0 auto">
-			<form action="/servlet01/a_co_entry_confirm" name="form1" method="get">
-				<br>
-				<a class="fluid ui primary huge button" href="javascript:form1.submit()" style="size">次へ</a>
-			</form>
+			<input class="fluid ui primary massive button" type="submit" value="おおきな そうしん ぼたん">
 		</div>
+		</form>
 				<br>
  				</div>
   				</div>

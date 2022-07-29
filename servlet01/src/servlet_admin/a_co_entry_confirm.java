@@ -25,6 +25,14 @@ public class a_co_entry_confirm extends HttpServlet {
 		Account account = new Account("管理者","taiyu.o","小笠原太優");
 		HttpSession session = request.getSession();
 		session.setAttribute("account",account);
+
+		request.setCharacterEncoding("UTF-8");
+		String name = request.getParameter("name");
+		session.setAttribute("name",name);
+
+		String year = request.getParameter("year");
+		session.setAttribute("year",year);
+
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher("WEB-INF/jsp/admin/a_co_entry_confirm.jsp");
 		dispatcher.forward(request, response);

@@ -8,6 +8,6 @@ public class Year {
 		id = _id;
 		name = _name;
 	}
-	public int getId() {System.out.println(id);return id;}
+	public int getId() {return id;}
 	public String getName() {return name;}
 }

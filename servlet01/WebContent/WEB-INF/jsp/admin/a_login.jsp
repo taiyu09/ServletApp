@@ -35,6 +35,7 @@
 		</div>
 		<br>
 	</div>
+	<div class="four wide column"></div>
 </div>
 
 <jsp:include page="../template/template_bottom.jsp"/>

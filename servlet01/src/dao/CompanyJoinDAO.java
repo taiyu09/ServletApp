@@ -27,6 +27,7 @@ public class CompanyJoinDAO {
 					+ "industry.name as industry,\r\n"
 					+ "salary.name as salary,\r\n"
 					+ "company.require,\r\n"
+					+ "company.pdf,\r\n"
 					+ "from company\r\n"
 					+ "join year on year_id = year.id\r\n"
 					+ "join region on region_id = region.id\r\n"
@@ -42,8 +43,9 @@ public class CompanyJoinDAO {
 				String industry = rs.getString("industry");
 				String salary = rs.getString("salary");
 				String require = rs.getString("require");
+				String pdf = rs.getString("pdf");
 				CompanyJoin companyjoin = new CompanyJoin(id,name,year,
-						region,industry,salary,require);
+						region,industry,salary,require,pdf);
 				dlist.add(companyjoin);
 			}
 		} catch(Exception e) {

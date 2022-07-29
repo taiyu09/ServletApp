@@ -30,8 +30,9 @@ public class CompanyDAO {
 				int industry_id = rs.getInt("industry_id");
 				int salary_id = rs.getInt("salary_id");
 				String require = rs.getString("require");
+				String pdf = rs.getString("pdf");
 				Company company = new Company(id,name,year_id,
-						region_id,industry_id,salary_id,require);
+						region_id,industry_id,salary_id,require,pdf);
 				dlist.add(company);
 			}
 		} catch(Exception e) {

@@ -10,10 +10,13 @@ public class CompanyJoin implements Serializable{
 	private String industry;
 	private String salary;
 	private String require;
+	private String pdf;
+
 	public CompanyJoin() {}
+
 	public CompanyJoin(int _id, String _name,
 			String _year, String _region,
-			String _industry, String _salary, String _require) {
+			String _industry, String _salary, String _require, String _pdf) {
 		id = _id;
 		name = _name;
 		year = _year;
@@ -21,7 +24,9 @@ public class CompanyJoin implements Serializable{
 		industry = _industry;
 		salary = _salary;
 		require = _require;
+		pdf = _pdf;
 	}
+
 	public int getId() {return id;}
 	public String getName() {return name;}
 	public String getYear() {return year;}
@@ -29,4 +34,5 @@ public class CompanyJoin implements Serializable{
 	public String getIndustry() {return industry;}
 	public String getSalary() {return salary;}
 	public String getRequire() {return require;}
+	public String getPdf() {return pdf;}
 }

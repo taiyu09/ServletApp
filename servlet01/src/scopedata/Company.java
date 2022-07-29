@@ -3,6 +3,7 @@ package scopedata;
 import java.io.Serializable;
 
 public class Company implements Serializable{
+
 	private int id;
 	private String name;
 	private int year_id;
@@ -10,10 +11,13 @@ public class Company implements Serializable{
 	private int industry_id;
 	private int salary_id;
 	private String require;
+	private String pdf;
+
 	public Company() {}
+
 	public Company(int _id, String _name,
 			int _year_id, int _region_id,
-			int _industry_id, int _salary_id, String _require) {
+			int _industry_id, int _salary_id, String _require, String _pdf) {
 		id = _id;
 		name = _name;
 		year_id = _year_id;
@@ -21,6 +25,7 @@ public class Company implements Serializable{
 		industry_id = _industry_id;
 		salary_id = _salary_id;
 		require = _require;
+		pdf = _pdf;
 	}
 	public int getId() {return id;}
 	public String getName() {return name;}
@@ -29,4 +34,5 @@ public class Company implements Serializable{
 	public int getIndustry_id() {return industry_id;}
 	public int getSalary_id() {return salary_id;}
 	public String getRequire() {return require;}
+	public String getPdf() {return pdf;}
 }

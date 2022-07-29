@@ -148,6 +148,11 @@
 						<td> <%= c.getSalary_id() %> </td>
 						<td> <%= c.getRequire() %> </td>
 					</tr>
+					<tr>
+						<td colspan="7" style="height: 900px;">
+							<iframe src= <%= "pdf/" + c.getPdf() %> width="100%" height="100%"></iframe>
+						</td>
+					</tr>
 					<% } %>
 				</tbody>
 			</table>
@@ -172,6 +177,11 @@
 						<td> <%= cj.getIndustry() %> </td>
 						<td> <%= cj.getSalary() %> </td>
 						<td> <%= cj.getRequire() %> </td>
+					</tr>
+					<tr>
+						<td colspan="7" style="height: 900px;">
+							<iframe src= <%= "pdf/" + cj.getPdf() %> width="100%" height="100%"></iframe>
+						</td>
 					</tr>
 					<% } %>
 				</tbody>

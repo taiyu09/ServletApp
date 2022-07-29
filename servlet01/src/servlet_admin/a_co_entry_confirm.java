@@ -35,7 +35,6 @@ public class a_co_entry_confirm extends HttpServlet {
 		String year_id = request.getParameter("year");
 		YearDAO ydao = new YearDAO();
 		Year year = ydao.select(year_id);
-		System.out.println(year.getName());
 		session.setAttribute("year",year.getName());
 
 		RequestDispatcher dispatcher =

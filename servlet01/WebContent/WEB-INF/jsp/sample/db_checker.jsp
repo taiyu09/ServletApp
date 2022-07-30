@@ -151,7 +151,7 @@
 					</tr>
 					<tr>
 						<td colspan="7" style="height: 900px;">
-							<iframe src= "<%= "pdf/" + URLDecoder.decode(c.getPdf(),"UTF-8" ) %>" width="100%" height="100%"></iframe>
+							<iframe src= "<%= "pdf/" + c.getPdf() %>" width="100%" height="100%"></iframe>
 						</td>
 					</tr>
 					<% } %>

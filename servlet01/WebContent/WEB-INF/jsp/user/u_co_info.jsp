@@ -1,17 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String pdf = (String)session.getAttribute("pdf");
+%>
 
-<jsp:include page="../template/template_top.jsp"/>
+<jsp:include page="../template/template_top.jsp">
+	<jsp:param name="header_url" value="/servlet01/u_menu"/>
+</jsp:include>
+
 <div class="ui segment">
-	<div style="width:100%;margin:0 auto">
-		<h2 align="center">企業詳細情報</h2>
-  	</div>
-  	<div align="center"></div><iframe width="100%" src="" title="PDF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio: 16 / 9;"></iframe>
+	<h2 class="ui center aligned header">企業詳細情報</h2>
+  	<iframe src= "<%= "pdf/" + pdf + "#toolbar=0&navpanes=0" %>" width="100%" height="100vh" style="min-height: 100vh;"></iframe>
 </div>
 <br><br>
-
-<form action="/sevlet01/u_menu" name="form1" method="get">
-	<a class="fluid ui huge button" href="javascript:form1.submit()" style="size">メニューに戻る</a>
+<form onclick="window.history.back(); return false;" name="form1" method="get">
+	<a class="fluid ui huge button" href="javascript:form1.submit()" style="size">戻る</a>
 </form>
+<br><br>
 
 <jsp:include page="../template/template_bottom.jsp"/>

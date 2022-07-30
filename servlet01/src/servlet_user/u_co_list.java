@@ -24,6 +24,7 @@ public class u_co_list extends HttpServlet {
 		List<CompanyJoin> cjlist = selectcompanyjoin.selectAll();
 		HttpSession session = request.getSession();
 		session.setAttribute("cjList", cjlist);
+
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher("WEB-INF/jsp/user/u_co_list.jsp");
 		dispatcher.forward(request, response);

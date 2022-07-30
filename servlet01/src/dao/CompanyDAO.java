@@ -11,6 +11,43 @@ import java.util.List;
 import scopedata.Company;
 
 public class CompanyDAO {
+	public Company selectId(int _id) {
+		PreparedStatement pstmt;
+		Connection con = null;
+		String sql = null;
+		Company company = new Company();
+		try {
+			Class.forName("org.h2.Driver");
+			con = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/servlet01","sa","morijyobi");
+			sql = "select * from company where id = " + "'" +_id + "'";
+			pstmt = con.prepareStatement(sql);
+			ResultSet rs = pstmt.executeQuery();
+			while(rs.next()) {
+				int id = rs.getInt("id");
+				String name = rs.getString("name");
+				int year_id = rs.getInt("year_id");
+				int region_id = rs.getInt("region_id");
+				int industry_id = rs.getInt("industry_id");
+				int salary_id = rs.getInt("salary_id");
+				String require = rs.getString("require");
+				String pdf = rs.getString("pdf");
+
+				company = new Company(id,name,year_id,
+						region_id,industry_id,salary_id,require,pdf);
+			}
+		} catch(Exception e) {
+			System.out.println(e.getMessage());
+			return null;
+		}finally {
+			try {
+				if( con!=null)con.close();
+			}catch(SQLException e) {
+				e.printStackTrace();
+				return null;
+			}
+		}
+		return company;
+	}
 	public List<Company> selectAll() {
 		List<Company> dlist = new ArrayList<Company>();
 		PreparedStatement pstmt;

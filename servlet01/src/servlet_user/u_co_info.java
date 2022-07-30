@@ -10,16 +10,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import scopedata.Account;
+import dao.CompanyDAO;
+import scopedata.Company;
 
 @WebServlet("/u_co_info")
 public class u_co_info extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Account account = new Account("管理者","taiyu.o","小笠原太優");
+		// id取得
+		int id = Integer.parseInt(request.getParameter("id"));
+		// DAO生成
+		CompanyDAO c = new CompanyDAO();
+		// pdfパス取得
+		Company result = c.selectId(id);
+		String pdf = result.getPdf();
+		// セッションに保存
 		HttpSession session = request.getSession();
-		session.setAttribute("account",account);
+		session.setAttribute("pdf",pdf);
 
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher("WEB-INF/jsp/user/u_co_info.jsp");

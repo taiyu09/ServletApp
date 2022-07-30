@@ -12,10 +12,9 @@
 
 <div class="ui segment">
 	<div style="width:100%;margin:0 auto">
-		<br>
 		<table class="ui celled table">
-			<h2 align="center">取引先企業一覧</h2>
-			<br><br>
+			<h2 class="ui center aligned header">取引先企業一覧</h2>
+			<br>
 			<thead>
 				<th style="width:25%"><div align="center">企業名</div></th>
 				<th style="width:10%"><div align="center">年度</div></th>

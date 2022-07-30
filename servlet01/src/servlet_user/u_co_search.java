@@ -13,7 +13,6 @@ import javax.servlet.http.HttpSession;
 
 import dao.CompanyJoinDAO;
 import dao.DropdownMaker;
-import scopedata.Account;
 import scopedata.CompanyJoin;
 import scopedata.Dropdown;
 
@@ -22,9 +21,8 @@ public class u_co_search extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Account account = new Account("管理者","taiyu.o","小笠原太優");
+
 		HttpSession session = request.getSession();
-		session.setAttribute("account",account);
 
 		//ddm
 		DropdownMaker ddm = new DropdownMaker();

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import = "scopedata.Account" %>
+
 <%
 	Account account = (Account)session.getAttribute("account");
 	request.setCharacterEncoding("UTF-8");
@@ -35,8 +36,10 @@
 						</div>
 						<div class="divider"></div>
 						<div class="item">
-							<i class="sign out icon"></i>
-							<a style="color: #000000;">ログアウト</a>
+							<a href="/servlet01/logout" style="color: #000000;">
+								<i class="sign out icon"></i>
+								ログアウト
+							</a>
 						</div>
 					</div>
 				</div>

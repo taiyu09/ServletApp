@@ -20,6 +20,7 @@
 					<br>
 					<a class="fluid ui primary huge button" href="javascript:form2.submit()">管理者</a>
 				</form>
+				<br>
 			</div>
 		</div>
 		<br><br>

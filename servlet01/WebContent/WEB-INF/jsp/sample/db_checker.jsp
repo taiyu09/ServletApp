@@ -9,6 +9,7 @@
 <%@ page import = "scopedata.Company"%>
 <%@ page import = "scopedata.CompanyJoin"%>
 <%@ page import = "java.util.List" %>
+<%@ page import = "java.net.URLDecoder" %>
 <%
 	List<User> ulist = (List<User>)session.getAttribute("uList");
 	List<Admin> alist = (List<Admin>)session.getAttribute("aList");
@@ -18,6 +19,7 @@
 	List<Salary> slist = (List<Salary>)session.getAttribute("sList");
 	List<Company> clist = (List<Company>)session.getAttribute("cList");
 	List<CompanyJoin> cjlist = (List<CompanyJoin>)session.getAttribute("cjList");
+	request.setCharacterEncoding("UTF-8");
 %>
 <jsp:include page="../template/template_top.jsp"/>
 
@@ -150,7 +152,7 @@
 					</tr>
 					<tr>
 						<td colspan="7" style="height: 900px;">
-							<iframe src= <%= "pdf/" + c.getPdf() %> width="100%" height="100%"></iframe>
+							<iframe src= "<%= "pdf/" + URLDecoder.decode(c.getPdf(),"UTF-8" ) %>" width="100%" height="100%"></iframe>
 						</td>
 					</tr>
 					<% } %>
@@ -180,7 +182,7 @@
 					</tr>
 					<tr>
 						<td colspan="7" style="height: 900px;">
-							<iframe src= <%= "pdf/" + cj.getPdf() %> width="100%" height="100%"></iframe>
+							<iframe src= "<%= "pdf/" + URLDecoder.decode(cj.getPdf(),"UTF-8" ) %>" width="100%" height="100%"></iframe>
 						</td>
 					</tr>
 					<% } %>

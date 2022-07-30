@@ -34,7 +34,6 @@ public class db_checker extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-
 		//user
 		UserDAO selectuser = new UserDAO();
 		List<User> ulist = selectuser.selectAll();

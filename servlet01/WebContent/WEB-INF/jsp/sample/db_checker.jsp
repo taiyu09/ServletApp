@@ -28,7 +28,6 @@
 	<div class="ten wide column">
 		<br><br>
 		<div class="ui segment">
-			<h1 class="ui dividing header">User</h1>
 			<table class="ui celled table">
 				<thead>
 					<th>id</th>
